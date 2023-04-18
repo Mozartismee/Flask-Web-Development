@@ -59,10 +59,26 @@ def example():
     <title>Example</title>
 </head>
 <body>
-    <p>A value from a dictionary: {{ mydict['key'] }}.</p>
-    <p>A value from a list: {{ mylist[3] }}.</p>
-    <p>A value from a list, with a variable indexy: {{ mylist[myintvar] }}.</p>
-    <p>A value from an object's method: {{ mydict.values() }}.</p>
+    <p>A value from a dictionary: dictionary_value.</p>
+    <p>A value from a list: d.</p>
+    <p>A value from a list, with a variable indexy: c.</p>
+    <p>A value from an object's method: result_of_somemethod.</p>
 </body>
 </html>
 ```
+
+#### filters
+
+```shell
+Hello, {{ name | capitalize }}
+```
+Table 3-1 : Jinja2 variable filters
+|Filter name|Description|
+|-----------|-----------|
+|safe       |renders the value without applying escaping|
+|capitalize |Converts the first character of the value to uppercase and the rest to lowercase|
+|lower      |Converts the value to lowercase characters|
+|upper      |Converts the value to uppercase characters|
+|title      |Capitalizes each word in the value|
+|trim       |Removes leading and trailing whitespace from the value|
+|striptags  |Removes any HTML tags from the value before rendering|
