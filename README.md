@@ -12,11 +12,11 @@ The code examples in this project are mostly from the book, and are used here fo
 ## Chapters
 
 - [Chapter 1: Hello, World!](ch01/)
-- [Chapter 2: Templates](ch02/)
-- [Chapter 3: Web Forms](ch03/)
-- [Chapter 4: Database](ch04/)
-- [Chapter 5: User Authentication](ch05/)
-- [Chapter 6: Profile Page and Avatars](ch06/)
+- [Chapter 2: Basic Application Structure](ch02/)
+- [Chapter 3: Templates](ch03/)
+- [Chapter 4: Web Forms](ch04/)
+- [Chapter 5: Databases](ch05/)
+- [Chapter 6: Emails](ch06/)
 - [Chapter 7: Error Handling](ch07/)
 - [Chapter 8: Followers, Contacts and Friends](ch08/)
 - [Chapter 9: Pagination](ch09/)
