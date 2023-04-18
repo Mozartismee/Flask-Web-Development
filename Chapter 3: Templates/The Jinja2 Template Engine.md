@@ -131,6 +131,8 @@ For eample, if a variable is set to the value '<h1>Hello</h1>', Jinja2 wiill cau
 
 
 ##### Inhereitance: base.html
+
+**base.html**
 ```html
 <html>
   <head>
@@ -145,6 +147,7 @@ For eample, if a variable is set to the value '<h1>Hello</h1>', Jinja2 wiill cau
 </html>
 
 ```
+**inherited template**
 ```html
 {% extends "base.html" %}
 {% block title %}{% endblock %}
@@ -158,7 +161,19 @@ For eample, if a variable is set to the value '<h1>Hello</h1>', Jinja2 wiill cau
 {% endblock %}
 ```
 
-
+**Result**
+```html
+<html>
+  <head>
+    <title> - My Application</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World !</h1>
+  </body>
+</html>
+```
 
 
 
