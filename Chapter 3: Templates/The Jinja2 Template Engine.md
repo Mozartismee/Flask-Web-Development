@@ -75,10 +75,91 @@ Hello, {{ name | capitalize }}
 Table 3-1 : Jinja2 variable filters
 |Filter name|Description|
 |-----------|-----------|
-|safe       |renders the value without applying escaping|
+|safe       |Renders the value without applying escaping|
 |capitalize |Converts the first character of the value to uppercase and the rest to lowercase|
 |lower      |Converts the value to lowercase characters|
 |upper      |Converts the value to uppercase characters|
 |title      |Capitalizes each word in the value|
 |trim       |Removes leading and trailing whitespace from the value|
 |striptags  |Removes any HTML tags from the value before rendering|
+
+It is intersting to note Striptags: Removes any HTML tags from the value before rendering. This is useful for rendering user-generated content in a safe manner.
+For eample, if a variable is set to the value '<h1>Hello</h1>', Jinja2 wiill cause the h1 element to be displayed and not interpret by the browser.
+
+
+## Control Structures
+
+**conditional statements**
+```html
+{% if user %}
+  Hello, {{ user }}!
+{% else %}
+  Hello, Stranger !
+{% endif %}
+```
+
+**for loop**
+```html
+<ul>
+  {% for comment in comments %}
+     <li>{{ comment }}</li>
+  {% endfor %}
+```
+
+**macros**
+```html
+{% macro render_comment(comment) %}
+    <li>{{ comment }}</li>
+{% endmacro %}
+
+<ul>
+    {% for comment in comments %}
+        {{ render_comment(comment) }}
+    {% end for %}
+    {% endfor %}
+</ul>
+```
+
+```html
+{% import 'macros.html' as macros %}
+<ul>
+    {% for comment in comments %}
+      {{ macros.render_comment(comment) }}
+    {% endfor %}
+</ul>
+```
+
+
+##### Inhereitance: base.html
+```html
+<html>
+  <head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - My Application</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
+
+```
+```html
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style>
+    </style>
+{% endblock %}
+{% blockbody %}
+<h1>Hello, World !</h1>
+{% endblock %}
+```
+
+
+
+
+
+
