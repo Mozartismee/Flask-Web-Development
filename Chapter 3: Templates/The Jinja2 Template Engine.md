@@ -130,7 +130,7 @@ For eample, if a variable is set to the value '<h1>Hello</h1>', Jinja2 wiill cau
 ```
 
 
-##### Inhereitance: base.html
+### Inhereitance: base.html
 
 **base.html**
 ```html
