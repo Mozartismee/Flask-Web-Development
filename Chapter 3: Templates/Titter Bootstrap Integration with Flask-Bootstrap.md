@@ -1,3 +1,4 @@
+## Bootstrap
 
 [Bootstrap](http://getbootstrap.com) is an open source framework from Twitter that provide user 
 interface components to create clean and attractive web pages that compatible with all modern 
@@ -73,8 +74,8 @@ if __name__ == '__main__':
 
 Before running your hello.py, don't forget to configure your [base.html](https://github.com/Mozartismee/Flask-Web-Development/blob/main/Chapter%203:%20Templates/The%20Jinja2%20Template%20Engine.md#inhereitance-basehtml) as we have done on previous section.
 
-**Result**
-You could write your name at the end of localhost:5000/user/...., and the web will print out your name.
+**Result**\n
+You could write your name at the end of localhost:5000/user/...., and the web will print out your name.\n
 <img width="1351" alt="截圖 2023-04-18 下午2 45 00" src="https://user-images.githubusercontent.com/108670929/232693860-73313f23-8b2e-48c6-9bdd-6104487d4754.png">
 
 
