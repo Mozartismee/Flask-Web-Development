@@ -13,7 +13,7 @@ The code examples in this project are mostly from the book, and are used here fo
 
 - [Chapter 1: Hello, World!](ch01/)
 - [Chapter 2: Basic Application Structure](ch02/)
-- [Chapter 3: Templates](./Chapter 3: Templates)
+- [Chapter 3: Templates](https://github.com/Mozartismee/Flask-Web-Development/tree/main/Chapter%203:%20Templates)
 - [Chapter 4: Web Forms](ch04/)
 - [Chapter 5: Databases](ch05/)
 - [Chapter 6: Emails](ch06/)
